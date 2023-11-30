@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sign Up</title>
+ 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    
+    <style media="screen">
+      *,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #070d1d;
+    }
+
+form{
+    height: 520px;
+    width: 400px;
+    background-color: #0a1020;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 50px 35px;
+}
+form *{
+    font-family: 'Poppins',sans-serif;
+    color: #7990b0;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}
+form h3{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+}
+
+label{
+    display: block;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 500;
+}
+input{
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: transparent;
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+}
+::placeholder{
+    color: #f7f4f4;
+}
+button{
+    margin-top: 30px;
+    width: 100%;
+    background-color: #7990b0;
+    color: #ffffff;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.social{
+  margin-top: 30px;
+  display: flex;
+}
+.social div{
+  background: rgb(233, 40, 40);
+  width: 120px;
+  border-radius: 3px;
+  padding: 5px 10px 10px 5px;
+  background-color: rgba(255,255,255,0.27);
+  color: #eaf0fb;
+  text-align: center;
+}
+.social div:hover{
+  background-color: rgba(255,255,255,0.47);
+}
+.social .fb{
+  margin-left: 20px;
+}
+.social i{
+  margin-right: 4px;
+}
+
+.fb {
+    background-color: #3B5998;
+    color: white;
+  }
+  
+  .apple {
+    background-color: #ecf2f7;
+    color: rgb(17, 1, 1);
+  }
+  
+  .google {
+    background-color: #dd4b39;
+    color: white;
+  }
+  
+  input,
+.btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 30px;
+  margin: 5px 0;
+  opacity: 0.85;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 20px;
+  text-decoration: none;
+}
+
+    </style>
+</head>
+<body>
+    <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+    <form>
+        <h3>Sign Up</h3><br>
+        <br>
+        <input type="email" class="email" placeholder="Email" id="email"><br>
+        <input type="password" class="pass" placeholder="Password" id="password">
+
+        <button>Sign Up</button>
+        <div class="col"><br>
+            <a href="#" class="google btn"><i class="fa fa-google fa-fw">
+            </i> Sign Up Google
+          </a><br>
+            <a href="#" class="fb btn">
+              <i class="fa fa-facebook fa-fw"></i> Sign Up Facebook
+             </a><br>
+            <a href="#" class="apple btn">
+              <i class="fa fa-apple fa-fw"></i> Sign Up Apple
+            </a>
+          </div>
+    </form>
+</body>
+</html>
